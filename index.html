@@ -24,6 +24,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "common-p-color": "#777",
+              "common-bg-color": "#f1f5f9",
+
             },
           },
         },
@@ -42,7 +45,7 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header>
+    <header class="container mx-auto">
       <!-- navbar section  -->
       <nav>
         <div class="navbar bg-gradient-to-r from-orange-300 to-amber-500">
@@ -122,7 +125,7 @@
       </nav>
       <!-- banner section  -->
       <section>
-        <div class="hero bg-base-200 ">
+        <div class="hero bg-base-100 mt-10">
           <div class="hero-content flex flex-col lg:flex-row">
             <div >
               <h1 class="text-7xl font-extrabold">
@@ -155,7 +158,73 @@
         </div>
       </section>
     </header>
-    <main></main>
+
+    <main class="container mx-auto">
+        <!-- featured products section  -->
+         <section class="space-y-7 mt-20 px-5">
+            <h3 class="text-5xl font-extrabold text-center">Our Featured Products</h3>
+            <p class="text-sm font-medium text-common-p-color text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            <!-- featured products container -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- card-1 -->
+                <div class="card bg-base-100  shadow-xl bg-common-bg-color">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/tea-1.png"
+                        alt="Shoes"
+                         />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl font-extrabold">Milk Tea!</h2>
+                      <p class="text-common-p-color text-base font-semibold">Creamer could be replaced by fresh milk</p>
+                      
+                    </div>
+                    </div>
+                <!-- card-2 -->
+                <div class="card bg-base-100  shadow-xl bg-common-bg-color">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/tea-2.png"
+                        alt="Shoes"
+                         />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl font-extrabold">Black Tea!</h2>
+                      <p class="text-common-p-color text-base font-semibold">Creamer could be replaced by fresh milk</p>
+                      
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card bg-base-100  shadow-xl bg-common-bg-color">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/tea-3.png"
+                        alt="Shoes"
+                         />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl font-extrabold">Chocolate Tea!</h2>
+                      <p class="text-common-p-color text-base font-semibold">Creamer could be replaced by fresh milk</p>
+                      
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="card bg-base-100  shadow-xl bg-common-bg-color">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/tea-4.png"
+                        alt="Shoes"
+                         />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl font-extrabold">Green Tea!</h2>
+                      <p class="text-common-p-color text-base font-semibold">Creamer could be replaced by fresh milk</p>
+                      
+                    </div>
+                  </div>
+            </div>
+         </section>
+    </main>
     <footer></footer>
   </body>
 </html>
